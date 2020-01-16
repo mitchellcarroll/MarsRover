@@ -24,15 +24,15 @@ Once each rover has received and completely executed its given instructions, it 
 
 ### Test Input
 
-5 5
-1 2 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM
+5 5  
+1 2 N  
+LMLMLMLMM  
+3 3 E  
+MMRMMRMRRM  
 
 ### Expected Output
 
-1 3 N
+1 3 N  
 5 1 E
 
 ### Room For Improvement
@@ -43,8 +43,8 @@ First, adding tests. I started out with the intention to add tests and then ran 
 
 The second area that I would like to improve is error handling. I have very basic error handling with the CantMoveException but there are several unhandled exceptions that use the System error handling.
 
-• System.IndexOutOfRangeException: Index was outside the bounds of the array.
+• i.e. `System.IndexOutOfRangeException: Index was outside the bounds of the array.`
 
-Another needed exception is if a user tries to enter the turn / move commands that are not valid (L,R, M) then it ignores the command. A better way to handle this is to check the input and then re-prompt the user to try the input again.
+Another needed exception is if a user tries to enter the `turn / move` commands that are not valid (L,R, M) then it ignores the command. A better way to handle this is to check the input and then re-prompt the user to try the input again.
 
 Overall, I enjoyed the challenge and think that I can learn C# and improve my overall abilities as a programmer.
