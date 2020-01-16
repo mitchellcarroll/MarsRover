@@ -56,7 +56,7 @@ namespace MarsRover
       Rover rover = null;
       while (result == false)
       {
-        Console.WriteLine("Enter the rover's current position & heading:");
+        Console.WriteLine("Enter the rover's current position & direction the Rover is facing:");
         string input = Console.ReadLine();
         string[] splitted = input.Split(' ', ',');
         result = int.TryParse(splitted[0], out X);
